@@ -1,0 +1,234 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-image: url("../images/bgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 1rem;
+}
+
+.wrapper {
+  width: 50%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.911);
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+.wrapper .top {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .top h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.wrapper .top .main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .top .main-info input {
+  margin: 1rem 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+}
+
+.wrapper .top .main-info input::-webkit-input-placeholder {
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .top .main-info input:-ms-input-placeholder {
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .top .main-info input::-ms-input-placeholder {
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .top .main-info input::placeholder {
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .top .main-info button {
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ffd900;
+  color: black;
+  text-transform: uppercase;
+  outline: none;
+  margin-left: 1.5rem;
+}
+
+.wrapper .top .main-info button:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+.wrapper .top .main-info h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.wrapper .top .main-info img {
+  width: 20%;
+  height: auto;
+  margin-top: 0.1rem;
+}
+
+.wrapper .top .main-info .warning {
+  color: red;
+  text-align: center;
+}
+
+.wrapper .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.wrapper .bottom div + div {
+  margin-left: 10%;
+}
+
+.wrapper .bottom .weatherText,
+.wrapper .bottom .tempText,
+.wrapper .bottom .humidityText {
+  color: #ffd900;
+  text-transform: uppercase;
+}
+
+.wrapper .bottom .weather,
+.wrapper .bottom .temp,
+.wrapper .bottom .humidity {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1030px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 2rem 0;
+  }
+  .wrapper .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50%;
+  }
+  .wrapper .top h1 {
+    text-align: center;
+  }
+  .wrapper .top .main-info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  .wrapper .top .main-info div button {
+    margin: 1.5rem;
+  }
+  .wrapper .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper .bottom div + div {
+    margin-left: 0;
+  }
+  .wrapper .bottom .weather,
+  .wrapper .bottom .temp,
+  .wrapper .bottom .humidity {
+    margin: 0.5rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .wrapper {
+    width: 90%;
+    padding: 0.5rem 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

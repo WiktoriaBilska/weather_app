@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: url("../images/bgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 1rem;
+}
+
+.wrapper {
+  width: 50%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.911);
+  border: 2px solid white;
+  border-radius: 25px;
+
+  .top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+    .main-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin: 1rem 0.5rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        background: none;
+        border: none;
+        color: #fff;
+        border-bottom: 2px solid #ddd;
+        outline: none;
+
+        &::placeholder {
+          color: #ddd;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+
+      button {
+        padding: 0.5rem 2.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: rgb(255, 217, 0);
+        color: black;
+        text-transform: uppercase;
+        outline: none;
+        margin-left: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: yellow;
+        }
+      }
+
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0.5rem;
+      }
+      img {
+        width: 20%;
+        height: auto;
+        margin-top: 0.1rem;
+      }
+
+      .warning {
+        color: red;
+        text-align: center;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+
+    div + div {
+      margin-left: 10%;
+    }
+
+    .weatherText,
+    .tempText,
+    .humidityText {
+      color: rgb(255, 217, 0);
+      text-transform: uppercase;
+    }
+
+    .weather,
+    .temp,
+    .humidity {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 2rem 0;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+
+      h1 {
+        text-align: center;
+      }
+
+      .main-info {
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 1rem;
+
+          button {
+            margin: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+
+      div + div {
+        margin-left: 0;
+      }
+
+      .weather,
+      .temp,
+      .humidity {
+        margin: 0.5rem 0 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .wrapper {
+    width: 90%;
+    padding: 0.5rem 0;
+  }
+}

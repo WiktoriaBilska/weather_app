@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="utf-8" />
+    <meta author="Wiktoria Bilska" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <h1>Weather app</h1>
+        <div class="main-info">
+          <div>
+            <input type="text" placeholder="Enter a city..." />
+            <button>Send</button>
+            <h3 class="city-name"></h3>
+            <p class="warning"></p>
+          </div>
+          <img src="" alt="weather image" class="photo" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div>
+          <p class="weatherText">Weather:</p>
+          <p class="weather"></p>
+        </div>
+        <div>
+          <p class="tempText">Temperature:</p>
+          <p class="temp"></p>
+        </div>
+        <div>
+          <p class="humidityText">Humidity:</p>
+          <p class="humidity"></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
