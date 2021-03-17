@@ -35,21 +35,45 @@ const getWeather = () => {
       input.value = "";
 
       if (status.id >= 200 && status.id < 300) {
-        photo.setAttribute("src", "images/thunderstorm.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/thunderstorm.svg"
+        );
       } else if (status.id >= 300 && status.id < 400) {
-        photo.setAttribute("src", "images/drizzle.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/drizzle.svg"
+        );
       } else if (status.id >= 500 && status.id < 600) {
-        photo.setAttribute("src", "images/rain.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/rain.svg"
+        );
       } else if (status.id >= 600 && status.id < 700) {
-        photo.setAttribute("src", "images/ice.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/ice.svg"
+        );
       } else if (status.id >= 700 && status.id < 800) {
-        photo.setAttribute("src", "images/fog.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/fog.svg"
+        );
       } else if (status.id === 800) {
-        photo.setAttribute("src", "images/sun.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/sun.svg"
+        );
       } else if (status.id >= 800 && status.id < 900) {
-        photo.setAttribute("src", "images/cloud.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/cloud.svg"
+        );
       } else {
-        photo.setAttribute("src", "images/unknown.svg");
+        photo.setAttribute(
+          "src",
+          "https://wiktoriabilska.github.io/weather_app/images/unknown.svg"
+        );
       }
     })
     .catch(() => {
