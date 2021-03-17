@@ -31,7 +31,8 @@ const getWeather = () => {
       temperature.textContent = Math.floor(temp) + "°C";
       humidity.textContent = hum + "%";
 
-      warning.textContent = "";
+      warning.textContent = "Text";
+      warning.style.color = "transparent";
       input.value = "";
 
       if (status.id >= 200 && status.id < 300) {
@@ -54,6 +55,7 @@ const getWeather = () => {
     })
     .catch(() => {
       warning.textContent = "Enter correct city name";
+      warning.style.color = "red";
     });
 };
 
